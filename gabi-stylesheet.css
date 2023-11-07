@@ -1,15 +1,11 @@
 
-html {
-    height:100vh;
-}
-
-body {
+html, body {
     width: 100%; /* Sets the body's width to 100% of the viewport */
-    max-width: 100%; /* Ensures the body can't exceed the viewport width */
-    margin: 0 auto; /* Centers the body horizontally within the viewport */
-    padding: 0; /* Remove default body padding */
+    height: 100vh;
+    margin: 0px; /* Centers the body horizontally within the viewport */
+    padding: 0px; /* Remove default body padding */
     box-sizing: border-box; /* Includes padding and border within the body's total width */
-    background-color: white;
+    overflow-x: hidden;
 }
 
 hr {
