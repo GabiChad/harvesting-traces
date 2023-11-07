@@ -1,0 +1,377 @@
+
+
+html {
+    height:100vh;
+}
+
+body {
+    width: 100%; /* Sets the body's width to 100% of the viewport */
+    max-width: 100%; /* Ensures the body can't exceed the viewport width */
+    margin: 0 auto; /* Centers the body horizontally within the viewport */
+    padding: 0; /* Remove default body padding */
+    box-sizing: border-box; /* Includes padding and border within the body's total width */
+}
+
+hr {
+    color: black;
+    size: 10px;
+}
+
+/* Header */
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    }
+
+#socio-political {
+    max-width: 50%;
+    height: auto;
+    align-items: end;
+    padding-left: 60px;
+    }
+
+.header {
+    max-width: 100%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    position: relative;
+    background-image: url('Images/Castanhe.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevents image tiling */
+}
+
+@media (max-width: 768px) {
+    .header {
+        max-width: 100%;
+        height: 50%;
+    }
+}
+
+/* Body Section */
+
+/* Palestine Section */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5% 5% 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+#unfold-black {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out; 
+}
+
+#unfold-green {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out; 
+}
+
+#unfold-red {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out; 
+}
+
+.palestine-text-container {
+    padding: 20px 100px;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    justify-content: center;
+    background-color:white;
+}
+
+.freepalestine {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 600;
+        font-size: 400%;
+        color: black;  
+}
+
+.arabic-free {
+    font-family: "omnes-arabic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.palestine-text {
+    font-family: "alfabet", sans-serif;
+font-weight: 300;
+font-style: normal;
+        font-size: 180%;
+        color: black;
+      }
+
+.subheading-currently {
+    font-family: "alfabet", sans-serif;
+font-weight: 300;
+font-style: normal;
+    color: black;
+    font-size: 160%;
+    }
+
+.currently-gallery {
+    width: auto; /* Set the desired width for the gallery container */
+   height: auto; /* Set the desired height for the gallery container */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid with flexible columns */
+    gap: 30px; /* Adjust the gap between images as needed */
+    padding: 5% 5%;
+    background-color: white;
+}
+
+.image-item img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.image-item {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+}
+
+.wiggle-on-hover {
+    transition: transform 0.2s ease-in-out;
+}
+
+.wiggle-on-hover:hover {
+    animation: wiggle 0.4s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Field Trip Section */
+
+#field {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 600;
+font-style: normal;
+font-size: 300%;
+    display: grid;
+    grid-template-columns: 1fr;
+     justify-items: left;
+     padding: 100px 0px 0px 100px;
+}
+
+#we-gather {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 400;
+font-style: normal;
+font-size: 200%;
+    display: grid;
+    grid-template-columns: 1fr;
+     justify-items: left;
+     padding: 0px 0px 0px 100px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.video-container{
+  display: grid;
+  grid-template-columns: 1fr;
+   justify-items: center;
+    padding: 80px;
+}
+
+video {
+    width: 48%; /* Adjust the width as needed to fit your layout */
+}
+
+.field-trip-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns, adjust as needed */
+    grid-gap: 20px; /* Adjust the gap between images as needed */
+    padding: 40px;
+}
+
+.field-trip-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    padding: 5px 50px;;
+}
+
+.video-container-two {
+    display: grid;
+  grid-template-columns: 1fr;
+   justify-items: center;
+    padding: 80px; 
+}
+
+video {
+    width: 48%; /* Adjust the width as needed to fit your layout */
+}
+
+/* Collective Review Section */
+
+.collective-header {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 500;
+font-style: normal;
+font-size: 300%;
+color: black; 
+padding: 20px 20px;
+}
+
+.collective-review {
+    background-color: white;
+    padding: 80px 80px;
+}
+
+.collective-review-gallery {
+    width: auto; /* Set the desired width for the gallery container */
+    height: auto; /* Set the desired height for the gallery container */
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid with flexible columns */
+     gap: 30px; /* Adjust the gap between images as needed */
+     padding: 5% 5%;
+}
+
+.collective-review-image{
+    display: grid; 
+}
+
+.collective-review-image img {
+    width: 80%;
+    height: auto;
+}
+
+/* End of Collective Review Section */
+
+
+/* Doodles Section */
+.doodles-video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#doodles-video {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#acorn-bounce {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bounce-up-down {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px); /* Adjust the bounce height as needed */
+    }
+}
+/* End of Doodles Section */
+
+
+/* Team Section */
+
+#team-header {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 600;
+font-style: normal;
+font-size: 300%;
+    display: grid;
+    grid-template-columns: 1fr;
+     justify-items: left;
+     padding: 100px 0px 0px 100px;
+}
+
+#portfolio-info {
+    font-family: "alfabet", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+            font-size: 180%;
+            color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+     justify-items: left;
+     padding: 0px 0px 0px 100px;}
+
+     .draggable-section {
+        width: 80%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+    
+    .draggable-item {
+        width: 150px;
+        height: auto;
+        position: absolute;
+        cursor: move;
+        background-color: #fff;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .draggable-item-1 img {
+        width: 160px;
+        height: auto;
+    }
+
+    .draggable-item-2 img {
+        width: 150px;
+        height: auto;
+    }
+
+    .draggable-item-3 img {
+        width: 150px;
+        height: auto;
+    }
+    
+    .draggable-item:active {
+        cursor: grabbing;
+    }

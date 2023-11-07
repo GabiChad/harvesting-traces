@@ -1,0 +1,36 @@
+html {
+    height:100vh;
+}
+
+body {
+    width: 100%; /* Sets the body's width to 100% of the viewport */
+    max-width: 100%; /* Ensures the body can't exceed the viewport width */
+    margin: 0 auto; /* Centers the body horizontally within the viewport */
+    padding: 0; /* Remove default body padding */
+    box-sizing: border-box; /* Includes padding and border within the body's total width */
+}
+
+/* Construction */
+
+.construction-announcement {
+    padding: 20px 100px;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    justify-content: center;
+    background-color:white;
+}
+
+.name {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: "SEIS" 0, "wght" 600;
+        font-size: 400%;
+        color: black;  
+}
+
+.construction-text {
+    font-family: "alfabet", sans-serif;
+font-weight: 300;
+font-style: normal;
+        font-size: 180%;
+        color: black;
+      }
