@@ -77,7 +77,8 @@ hr {
 }
 
 .palestine-text-container {
-    padding: 20px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
     grid-template-columns: 1fr;
     grid-row: auto;
     justify-content: center;
@@ -93,7 +94,7 @@ hr {
 
 .arabic-free {
     font-family: "omnes-arabic", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -101,7 +102,7 @@ hr {
     font-family: "alfabet", sans-serif;
 font-weight: 300;
 font-style: normal;
-        font-size: 180%;
+        font-size: 140%;
         color: black;
       }
 
@@ -110,7 +111,7 @@ font-style: normal;
 font-weight: 300;
 font-style: normal;
     color: black;
-    font-size: 160%;
+    font-size: 120%;
     }
 
 .currently-gallery {
@@ -205,17 +206,19 @@ video {
 }
 
 .field-trip-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns, adjust as needed */
-    grid-gap: 20px; /* Adjust the gap between images as needed */
-    padding: 40px;
+    width: auto; /* Set the desired width for the gallery container */
+    height: auto; /* Set the desired height for the gallery container */
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid with flexible columns */
+     gap: 30px; /* Adjust the gap between images as needed */
+     padding: 5% 5%;
 }
 
 .field-trip-image img{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio and cover the container */
-    padding: 5px 50px;;
+    padding: 20px 20px;
 }
 
 .video-container-two {
@@ -319,7 +322,8 @@ font-size: 300%;
     display: grid;
     grid-template-columns: 1fr;
      justify-items: left;
-     padding: 100px 0px 0px 100px;
+     padding-top: 40px;
+   padding-left: 100px;
 }
 
 #portfolio-info {
@@ -331,7 +335,8 @@ font-size: 300%;
     display: grid;
     grid-template-columns: 1fr;
      justify-items: left;
-     padding: 0px 0px 0px 100px;}
+     padding-left: 100px;
+    }
 
      .draggable-section {
         width: 80%;
